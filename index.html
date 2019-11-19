@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="CSS/ambrosia1.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Homepage</title>
+
+
+
+</head>
+
+<body>
+<!--Navigation bar-->
+<header>
+
+    <div class="div1">
+
+        <nav>
+		<div class="dropdown">
+  <button class="dropbtn">Language</button>
+  <div class="dropdown-content">
+  <a href="#">English</a>
+  <a href="#" onclick="myFunction()">Māori </a>
+  <a href="#" onclick="myFunction()">Persian</a>
+  <a href="#" onclick="myFunction()">Thai</a>
+  <a href="#" onclick="myFunction()">Chinese</a>
+  </div>
+</div>
+            <ul class="navlinks">
+                <li><a class="transition" href="aboutus.html">ABOUT</a></li>
+                <li class="dropdown1"><a class="transition" href="services.html">SERVICES</a>
+                    <div class="dropdown-content1">
+                        <a href="hair.html">HAIR</a>
+                        <a href="lashed.html">LASHES</a>
+                        <a href="nails.html">NAILS</a>
+						<a href="massagespa.html">MASSAGE</a>
+						<a href="waxing.html">WAXING</a>
+                    </div>
+                </li>
+                <li class="dropdown1"><a class="transition" href="Products.html">PRODUCTS</a>
+                    <div class="dropdown-content1">
+                        <a href="hair.html">HAIR CARE</a>
+                        <a href="skincare.html">SKIN CARE</a>
+                    </div>
+                </li>
+                <a href="Index.html"><img src="Images/log0.png" alt="logo" class="logo"></a>
+                <li><a class="transition" href="Deals.html">DEALS</a></li>
+
+                </li>
+                <li><a class="transition" href="Contact.html">CONTACT</a></li>
+                <li><a class="transition" href="undermaintenance.html">BOOK NOW</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+<br><br><br>
+
+<!--JAVA SCRIPT-->
+
+<script>
+function myFunction() {
+	alert("Function currently unavailable");
+}
+
+</script>
+
+
+<div class="homepage-image">
+<img src="images/homepage1.jpg" class="IMAGE">
+
+</div>
+<br><br>
+<div class="imagebox">
+<div class="container">
+  <img src="images/pedicure.jpg" alt="picture" class="cont-image">
+  <div class="overlay-home">
+    <div class="text-home"><a href="services.html">SERVICES</a></div>
+  </div>
+</div>
+<div class="container2">
+  <img src="images/pod.jpg" alt="picture" class="cont-image2">
+  <div class="overlay-home2">
+    <div class="text-home2"><a href="products.html">PRODUCTS</a></div>
+  </div>
+  </div>
+  <div class="container3">
+  <img src="images/offfff.jpg" alt="picture" class="cont-image3">
+  <div class="overlay-home3">
+    <div class="text-home3"><a href="deals.html">DEALS</a></div>
+  </div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="container0">
+  <div class="mySlides">
+   
+    <img src="images/one.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    
+    <img src="images/two.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+   
+    <img src="images/three.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    
+    <img src="images/four.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    
+    <img src="images/five.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    
+    <img src="images/six.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container0">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/one.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/two.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/three.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/four.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/five.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/six.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+
+
+<!--JAVA GALLERT-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+
+<div class="reviews">
+<div class="review">
+  <img src="images/avatar.png" alt="Avatar" style="width:70px">
+  <p> Julie Smith</p>
+  <p>Best H&B Salon in Auckland!!!</p>
+</div>
+
+<div class="review">
+  <img src="images/avatar.png" alt="Avatar" style="width:70px">
+  <p> Mathew Mendes</p>
+  <p>Always come here for my eyebrows. Absolutely love it. </p>
+</div>
+<div class="review">
+  <img src="images/avatar.png" alt="Avatar" style="width:70px">
+  <p> Annie Lei</p>
+  <p> Ambrosia salon is the place to go to for high quality services at a reasonable price. Highly recommended! </p>
+</div>
+</div>
+
+
+
+
+<footer>
+  <div class="container7">
+
+
+          <div class="sitemap">
+            <h3>Sitemap</h3>
+           <a href="aboutus.html"><p><strong>ABOUT</strong></p></a>
+           <a href="services.html"><p><strong>SERVICES</strong></p></a>
+           <a href="products.html"><p><strong>PRODUCTS</strong></p></a>
+           <a href="deals.html"><p><strong>DEALS</strong></p></a>
+           <a href="contact.html"><p><strong>CONTACTS</strong></p></a>
+           <a href="undermaintenance.html"><p><strong>BOOK NOW</strong></p></a>
+</div>
+
+         <div class="opening-time">
+           <h3>Opening Hour</h3>
+
+           <p><strong>Mon:</strong> 10:00am-5:00pm</p>
+           <p><strong>Tues:</strong> 9:00am - 5:00pm</p>
+           <p><strong>Wed-Thurs:</strong> 10:00am - 7:00pm</p>
+
+           <p><strong>Fri-Sat:</strong> 09:00am-5:00pm</p>
+
+           <p><strong>Sun:</strong> CLOSED</p>
+
+
+          </div>
+<div class="footer2">
+
+<h3>Stay in touch</h3>
+<a href="mailto:sales@example.com" class="contact1">ambrosia@hotmail.com</a>
+<a href="mailto:support@example.com" class="contact2"> ambrosia@gmail.com </a>
+<a href="tel:0121234" class="contact-link">(123) 456-789</a>
+
+ <br><br>
+ <a href="https://www.facebook.com/"><img src="images/fb.png" style="width:35px;height:35px;"></a>
+ <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="images/insta.jpg" style="width:35px;height:35px;"></i></a>
+ <a href="https://www.pinterest.nz/?autologin=true"><img src="images/pinterest.png" style="width:35px;height:35px;"></i></a>
+ <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><img src="images/snapchat.png" style="width:35px;height:35px;"></i></a>
+
+</div>
+
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.750806341457!2d174.7600023150269!3d-36.84844368719461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47f06d4bdc25%3A0x2d1b5c380ad9387!2sSky%20Tower!5e0!3m2!1sen!2snz!4v1572389526253!5m2!1sen!2snz
+      " width="230" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="copyright">
+<p style="text-align:center;margin-top:10px;position:relative;">
+  &copy; Copyright  Ambrosia beauty Salon 2019 | Website by AlbertUni Design
+</p>
+</div>
+
+
+</div>
+</footer>
+</body>
+</html>
