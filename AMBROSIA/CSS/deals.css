@@ -1,0 +1,284 @@
+/*Deals webpage styling*/
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'karla', sans-serif;
+}
+
+
+/*Navigation bar styling*/
+header {
+    background: #ffffff;
+    width: 100%;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.div1 {
+    float:left;
+    width:100%;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 7px 7px 0;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin: 1px 1px 1px 110px;
+}
+
+li {
+    float: left;
+    margin: 40px 5px 5px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing:1px;
+}
+
+li a:hover {
+    background: #f9f9f9;
+}
+
+
+.transition::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+
+.transition:hover::after{
+    width: 100%;
+    transition: width;
+}
+
+
+/*Languages dropdown styling*/
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: left;
+    margin: 10px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    float: left;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.dropdown-content a:hover {
+    background-color: #808080;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+
+
+/*Dropdown menu styling*/
+.dropdown-content1 {
+    float:left;
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    float: none;
+    color: white;
+    padding:25px;
+    font-weight: lighter;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content1 a:hover {
+    background-color: grey;
+    text-decoration: underline;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+/*Voucher section body styling*/
+#dealsimg {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+
+/*Deal boxes styling*/
+.deals {
+    border: solid 4px #bfb6ad;
+    padding:10px;
+    display: inline-block;
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 200px;
+    background-color: #fadbd8;
+}
+
+.buybtn {
+    float: right;
+    padding-right: 20px;
+    padding-top: -25px;
+    text-align: center;
+    border-radius:5px;
+    height: 35px;
+    width: 100px;
+    color: #000;
+    background-color: #bfb6ad;
+}
+
+
+/*Vouchers section content stying*/
+#voucher {
+    margin-left: 50%;
+    margin-top: 20px;
+    height: 30px;
+    width: 220px;
+    transition: unset;
+    background-color: #f9f9f9;
+    background-image: unset;
+}
+
+#voucher::placeholder {
+    color:#000000;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#voucherbtn {
+    position: relative;
+    margin-left: 50%;
+    margin-top: 20px;
+    height: 35px;
+    width: 100px;
+}
+
+#voucherimg {
+    padding-left: 385px;
+    margin-top: -138px;
+    padding-bottom: 100px;
+    height: 340px;
+    width: 340px;
+}
+
+
+/*Footer styling*/
+.footer2 {
+    position: relative;
+    width: 20%;
+    float: left;
+    padding-left: 110px;
+    margin-top: 30px;
+}
+
+.opening-time{
+    position:relative;
+    width: 15%;
+    float: left;
+    padding-left: 125px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.sitemap {
+    position:relative;
+    width: 10%;
+    float: left;
+    padding-left: 120px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.map {
+    position:relative;
+    width: 15%;
+    float: left;
+    padding-left: 110px;
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+.contact1 {
+    text-decoration: none;
+}
+
+.contact2 {
+    text-decoration: none;
+}
+
+.container1 {
+    width: 100%;
+    height: 320px;
+    background-color: #EDCFBF;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Link for external CSS-->
+<link rel="stylesheet" text="type/css" href="CSS/products.css">
+<head>
+    <title>Products</title>
+</head>
+<body>
+
+<!--Header-->
+<header>
+        <div class="div1">
+            <nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                        <a href="#">English</a>
+                        <a href="#">Maori</a>
+                        <a href="#">Persian</a>
+                        <a href="#">Thai</a>
+                        <a href="#">Chinese</a>
+                    </div>
+                </div>
+
+                <ul class="navlinks">
+                    <li><a class="transition" href="aboutUs.html">ABOUT</a></li>
+                    <li class="dropdown1"><a class="transition" href="services.html">SERVICES</a>
+                        <div class="dropdown-content1">
+                            <a href="hair.html">HAIR</a>
+                            <a href="lashes.html">LASHES</a>
+                            <a href="nails.html">NAILS</a>
+                            <a href="Massagespa.html">MASSAGE</a>
+                            <a href="waxing.html">WAXING</a>
+                        </div>
+                    </li>
+                    <li class="dropdown1"><a class="transition" href="Products.html">PRODUCTS</a>
+                        <div class="dropdown-content1">
+                            <a href="Haircare.html">HAIR CARE</a>
+                            <a href="skincare.html">SKIN CARE</a>
+                        </div>
+                    </li>
+                    <a href="index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
+                    <li><a class="transition" href="Deals.html">DEALS</a></li>
+                    <li><a class="transition" href="contact.html">CONTACT</a></li>
+                    <li><a class="transition" href="undermatinance.html">BOOK NOW</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
+<br><br>
+
+<!--Page heading image-->
+<img src="Images/products.jpg" id="productsimg"/>
+
+<!--Products page description w/ inline styling-->
+<p style="padding:10px; text-align:center">
+   At Ambrosia H&B we have a small in-store shop where we stock and sell top quality hair and beauty products. <br>
+   Though we only have a limited number of products available the products that are available all highly recommended <br>
+   and supported by our well-trained staff, all extra products that we use in or treatments are also available in store as well.
+   <br> If there is an item that you wish to purchase that is not online or you simply want to buy in person you can put it on hold <br>
+   by calling us, however no guarantees can be made if other customers wish to purchase the last item of that product <br>
+   or if the product is a hold for more the a day.
+</p>
+
+<!--The modal buttons are under all headings and are for opening the modals-->
+<h3 style="padding:10px;">Haircare products:</h3>
+<!--Modal buttons for modals 1-4-->
+<button class="modalbtn" data-modal="modal1">GHD Split End Therapy <br><br><img src="Images/HP1.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal2">Angel Helichrysum Hair Mask <br><br><img src="Images/HP2.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal3">Evo Buddies 500ml Set Fat & Happy <br><br><img src="Images/HP3.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal4">Evo Bride of Gluttony Conditioner <br><br><img src="Images/HP4.png" alt="" class="btnimg"/></button>
+<br>
+<br>
+
+<!--Modals w/ images and paragraphs-->
+<!--Modal 1-->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>GHD Advanced Split End Therapy: $19.90</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="Images/HP1.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                A light, soft cream that when applied prior to the usage of any preferred heating hair tool is activated
+                and <br> releases healthy ingredients with restorative and replenishing properties.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 2-->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>300g Angel Helichrysum Pure Nourishing Hair Mask: $40.00</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="Images/HP2.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                With the regenerating and revitalising effect of this mask your hair is left looking beautiful
+                with a colourful healthy glow, and a deliciously refreshing feel.
+            </P>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 3-->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Evo Buddies 500ml Set Fat & Happy: $74.50</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="Images/HP3.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                Extremely light and gives your hair physical volume, whilst also giving your hair strength
+                and helping against hair fading.
+            </P>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 4-->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <b>Description:</b><br>
+        <div class="modal-header"><p>Evo Bride of Gluttony Volume Conditioner MINI 30ml: $5.95</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="Images/HP4.png" alt="" style="float:left; margin-left:20px; background-color:#f9f9f9; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                A free weight conditioner that, with the same properties as the Evo buddies shampoo and conditioner,
+                helps with improving the volume and strength of hair.
+            </P>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+
+<h3 style="padding:10px;">Skincare products:</h3>
+<!--Modal buttons for modals-->
+<button class="modalbtn" data-modal="modal5">Swisse Detoxifying Facial Mask <br><br><img src="Images/SP1.png" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal6">Swisse Face Moisturiser: <br> Vitamin E <br><br><img src="Images/SP2.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal7">Swisse Face Moisturiser: <br> Rose Hip oil <br><br><img src="Images/SP3.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal8">EVO cake cleanser <br><br><img src="Images/SP4.jpg" alt="" class="btnimg"/></button>
+<br>
+<br>
+
+<!--Modal 5-->
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Swisse Manuka Honey Detoxifying Facial Mask: $19.80</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="Images/SP1.png" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                A naturally absorbent facial mask, sensitively formulated to cleanse and detoxify the skin,
+                whilst leaving it feeling both smooth and hydrated. Ideal for over-crowded or sensitive skin.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 6-->
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Swisse Vitamin E Facial Moisturiser: $18.00</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/SP2.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                Enhanced with natural Vitamin E to help protect and nourish.
+                As well as other natural properties to help soothe redness or irritation and alleviate sensitive skin.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 7-->
+<div id="modal7" class="modal">
+    <div class="modal-content">
+        <b>Description:</b><br>
+        <div class="modal-header"><p>Swisse Rose Hip Facial Moisturiser: $14.00</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/SP3.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                With marvelous natural healing properties this moisturizer is perfect to use as regularly apply for everyday use.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 8-->
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>EVO Cake Cleanser 310g: $35.00</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/SP4.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                A gentle and thoroughly mixed cleansing soap that uses it's neutral PH properties to help cleans and
+                moisturizes the skin whilst leave a beautiful light sent.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+
+<h3 style="padding:10px;">Tools & Accessories:</h3>
+<!--Modal buttons for modals 9-13-->
+<button class="modalbtn" data-modal="modal9">GHD Max Gold Straightener <br><br><img src="images/A&T1.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal10">GHD curve 2.0 <br><br><img src="images/A&T3.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal11">Silver Bullet Mini Straightening Brush <br><br><img src="images/A&T4.jpg" alt="" class="btnimg"/></button>
+<button class="modalbtn" data-modal="modal12">Facial Buffer <br><br><img src="images/A&T6.jpg" alt="" class="btnimg"/></button>
+<br>
+<br>
+<button class="modalbtn" data-modal="modal13" style="margin-bottom:25px;">Foreo Luna mini 2 <br><br><img src="images/A&T7.jpg" alt="" class="btnimg"/></button>
+<br>
+<br>
+
+<!--Modal 9-->
+<div id="modal9" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>GHD Max Gold: $160 </p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/A&T1.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                The brand new Max Gold straightening iron has been professionally designed to overcome even the most
+                craziest and strongest of curls within an instant. With its fresh lustrous design and innovative features
+                such as safety guard plates for protection, a rounded barrel perfect for styling light curls and flicks,
+                as well as Universal Voltage so you can use it Anywhere!
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 10-->
+<div id="modal10" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>GHD curve 2.0 creative curl wand: 275.50</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/A&T3.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                With the ground breaking and accommodating design of one of GHD's newest curlers styling and curling your
+                hair has become a easy and stress-free activity. The curve 2.0's new tapered barrel and unique shape allows
+                for a large variety of different types of curls, flicks and waves to be made.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 11-->
+<div id="modal11" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">Silver Bullet mini hybrid ceramic and ionic straightening brush: $85.00<span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/A&T4.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                With Silver Bullet's fast working ceramic brush have your hair styled to perfection within mare minutes
+                and  leaving it looking blow-dried to professional quality with just one brush.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 12-->
+<div id="modal12" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Body Shop Facial Buffer: $11.50</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/A&T6.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                This facial buffer will gently cleanse and exfoliate your skin, revealing a more softer, radiant
+                complexion as you buff away dead skin cells. By helping with facial wash lather the buffer is able to
+                stimulate and improve skin microcirculation making it ideal for dry skin in need regular exfoliation.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--Modal 13-->
+<div id="modal13" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Foreo Luna mini 2 (Various Shades): $181.75</p><span class="close">&times;</span></div>
+        <div class="modal-body">
+            <img src="images/A&T7.jpg" alt="" style="float:left; margin-left:20px; border:solid 3px #7b7b7b; height:400px; width:350px;"/>
+            <p class="Pdescription">
+                <b>Description:</b><br>
+                This is a facial cleansing device designed to offer a professional standard of skincare with its energizing
+                one-minute ritual. Catered for all skin types, this facial brush inspires healthier looking skin by
+                helping to clear and illuminate a more radiant complexion.
+            </p>
+            <button type="submit" class="buybtn" onclick="myFunction()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!--JavaScript for alert pop-up: for unusable buttons-->
+<script>
+    function myFunction() {
+        alert("Sorry! This function is currently unavailable.");
+    }
+</script>
+
+<!--JavaScript for modals to pop-up-->
+<script>
+    const modalBtns = document.querySelectorAll(".modalbtn");
+
+    modalBtns.forEach(function(btn) {
+        btn.onclick = function () {
+            const modal = btn.getAttribute("data-modal");
+
+            document.getElementById(modal).style.display = "block";
+        };
+    });
+
+    const Span = document.querySelectorAll(".close");
+
+    Span.forEach(function(btn) {
+        btn.onclick = function () {
+            const modal = (btn.closest(".modal").style.display = "none");
+        }
+    });
+
+    window.onclick = function (e) {
+        if (e.target.className === "modal" ) {
+            e.target.style.display = "none";
+        }
+    };
+</script>
+
+<!--Footer-->
+<footer>
+    <div class="container1">
+        <div class="sitemap">
+            <h3>Sitemap</h3>
+            <a  href="aboutUs.html"><p><strong>ABOUT</strong></p></a>
+            <a href="services.html"><p><strong>SERVICES</strong></p></a>
+            <a  href="Products.html"><p><strong>PRODUCTS</strong></p></a>
+            <a  href="Deals.html"><p><strong>DEALS</strong></p></a>
+            <a  href="contact.html"><p><strong>CONTACTS</strong></p></a>
+            <a  href="undermaintenance.html"><p><strong>BOOKING</strong></p></a>
+        </div>
+
+        <div class="opening-time">
+            <h3>Opening Hour</h3>
+            <p><strong>Mon:</strong> 10:00am - 5:00am</p>
+            <p><strong>Tues:</strong> 9:00am - 5:00am</p>
+            <p><strong>Wed-Thurs:</strong> 10:00am - 7:00am</p>
+            <p><strong>Fri-Sat:</strong> 09:00am - 5:00am</p>
+            <p><strong>Sun:</strong>CLOSED</p>
+        </div>
+
+        <div class="footer2">
+            <h3>Stay in touch</h3>
+            <a href="mailto:sales@example.com" class="contact1">sales@example.com</a>
+            <a href="mailto:support@example.com" class="contact2"> support@example.com </a>
+            <a href="tel:0121234" class="contact-link">(123) 456-789</a>
+            <br><br>
+            <a href="https://www.facebook.com/"><img src="images/FBicon.png" style="width:35px;height:35px;" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="images/instagram.jpg" style="width:35px;height:35px;" alt=""></a>
+            <a href="https://www.pinterest.nz/?autologin=true"><img src="images/pinterest.png" style="width:35px;height:35px;" alt=""></a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><img src="images/Snapchat.png" style="width:35px;height:35px;" alt=""></a>
+        </div>
+
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.750806341457!2d174.7600023150269!3d-36.84844368719461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47f06d4bdc25%3A0x2d1b5c380ad9387!2sSky%20Tower!5e0!3m2!1sen!2snz!4v1572389526253!5m2!1sen!2snz
+      " width="230" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p style="text-align:center;margin-top:10px;position:relative;">
+            © Copyright  Ambrosia beauty Salon 2019 | Website by AlbertUni Design
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
