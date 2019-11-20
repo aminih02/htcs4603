@@ -1,0 +1,436 @@
+body {  
+        background:white;
+		margin:0;
+		font-family: 'karla', sans-serif;
+      
+       
+
+}
+
+header { background:;
+
+}
+.div1 { float:left;
+width:100%;
+}
+header::after { content:"";
+	            display: table;
+	            clear: both;
+	  
+}
+
+/*Language dropdown*/
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+  
+  cursor: pointer;
+}
+
+.dropdown {
+	float:left;
+	margin:10px;
+  
+  display: inline-block;
+}
+
+.dropdown-content {
+	float:left;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color:black;
+  opacity:0.8;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+.logo { float:left;
+        width:200px; 
+		height:70px;
+		
+        margin-top:10px;
+		margin-bottom:5px;
+		padding:7px;
+		padding-bottom:0px;
+}
+
+
+ul {list-style:none; 
+  margin: 1px;
+  padding: 0;
+  overflow: hidden;
+  float:left;
+ 
+  margin-left:110px;
+
+  
+}
+
+li {
+  float: left;
+  margin:5px;
+  margin-top:40px;
+ 
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px ;
+  text-decoration: none;
+  font-size:17px;
+  letter-spacing:1px;
+  
+}
+
+li a:hover {background:#;
+}
+
+
+.transition::after{
+content:'';	
+display:block;
+width:0;
+height:2px;
+background: black ;
+transition: width .3s;
+}
+
+.transition:hover::after{
+width:100%;
+transition:width;	
+	
+	
+}	
+	
+
+       /*dropdown*/
+      .dropdown-content1 {
+	    float:left;
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 100px;
+        opacity: 0.8;
+        z-index: 1;
+}
+
+         .dropdown-content1 a {
+           float: none;
+           color: white;
+           padding:25px;
+           font-weight: lighter;
+           font-size: 14px;
+           display: block;
+           text-align: left;
+}
+
+          .dropdown-content1 a:hover {
+            background-color: grey;
+            text-decoration: underline;
+}
+
+          .dropdown1:hover .dropdown-content1 {
+            display: block;
+}
+
+
+          .elegant img{
+	        width:100%;
+		    height:60%;
+			margin-top: 30px;
+				
+				}
+          #nailContent{
+            background-color: #FADED8;
+            text-align: center;
+            margin: none;
+            float: left;
+            font-size: 18px;
+            padding: 30px;
+
+        }
+        .prices{
+            float: left;
+            margin-left: 30px;
+            font-size: 16px;
+            color: black;
+            width: 33%;
+            border-right: 2px solid black;
+            height: 100%;
+
+
+
+        }
+
+        body {
+            width: 100%;
+        }
+
+       
+
+      .footer2 {
+
+        position: relative;
+        width: 20%;
+        float: left;
+        padding-left: 110px;
+        margin-top: 40px;
+}
+
+      .opening-time{
+       position:relative;
+       width: 15%;
+       float: left;
+       padding: px;
+       margin-top: 25px;
+	   margin-left:0px;
+       font-size: 15px;
+
+
+       }
+	    .opening-time1{
+       position:relative;
+       width: 12%;
+	   height: 200px;
+       float: left;
+       margin-top: 20px;
+	   font-size: 15px;
+
+
+       }
+
+          .sitemap{
+          position:relative;
+          width: 400px;
+          float: left;
+          padding-left: 120px;
+          margin-top: 20px;
+          font-size: 15px;
+
+
+         }
+		  .sitemap1{
+          position:relative;
+          width: 280px;
+          float: left;
+          padding-left: 120px;
+          margin-top: 20px;
+          font-size: 15px;
+
+
+         }
+
+        .map {
+        position:relative;
+        width: 15%;
+        float: left;
+        padding-left: 110px;
+        margin-top: 45px;
+        font-size: 14px;
+
+}
+
+
+
+
+.contact1{
+text-decoration: none;
+
+}
+
+.contact2{
+text-decoration: none;
+
+}
+
+
+           .container1{
+           width: 100%;
+           height: 400px;
+		   margin-top: 1500px;
+           background-color: #EDCFBF;
+
+}
+           .container2{
+           width: 100%;
+           height: 330px;
+		  
+           background-color: #EDCFBF;
+
+}
+		/* Container holding the image and the text */
+        .elegant {
+            position: relative;
+}
+
+        /* Bottom right text */
+        .text-block {
+           position: absolute;
+           bottom: 170px;
+           right: 0;
+           background-color: rgba(13, 13, 13, 0.6);
+           color: white;
+           padding: 60px;
+		   font-family: 'karla', sans-serif;
+		   font-size: 20px;
+          
+           }
+         
+        /* Container holding the image and the text */
+       .nailsimg {
+           position: relative;
+           text-align: center;
+           color: black;
+        }
+       .top-left {
+           position: absolute;
+           top: 8px;
+           left: 16px;
+		   font-size:120px;
+		   margin-left:100px;
+		   font-family: 'Lobster', cursive;
+            }
+       
+
+        .info{
+            float: left;
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+            margin-top: 15px;
+
+        
+        }
+                .slidebox {
+                position: relative;
+                width: 260px;
+                height: 254px;
+                float: left;
+                margin: 15px;
+                mso-border-shadow: yes;
+            }
+                 .slidebox1 {
+                position: relative;
+                width: 940px;
+                height: 250px;
+                float: left;
+                margin: 15px;
+                mso-border-shadow: yes;
+            }
+            .imageinfo {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+			
+
+            .overlayleft {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 204, 204, 0.7);
+                overflow: hidden;
+                width: 0;
+                height: 254px;
+                transition: .5s ease;
+            }
+            
+            .slidebox:hover .overlayleft {
+                width: 100%;
+            }
+            .slidebox1:hover .overlayleft {
+                width: 100%;
+            }
+            .textleft {
+                color: black;
+                font-size: 29px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+                border: ghostwhite solid 4px;
+                padding: 8px;
+				font-family: 'Lobster', cursive;
+
+            }
+			/* Three columns side by side */
+.column {
+  float: left;
+  width: 22%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 25px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+           
